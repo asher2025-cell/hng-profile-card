@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card | HNG Internship</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main data-testid="test-profile-card" class="profile-card">
+    <img 
+      src="https://via.placeholder.com/150" 
+      alt="User avatar" 
+      data-testid="test-user-avatar"
+      id="avatar-img"
+      class="avatar"
+    />
+
+    <h1 data-testid="test-user-name">Asher Gangaidzo</h1>
+
+    <p data-testid="test-user-bio">
+      Passionate frontend developer and designer. Always learning and creating delightful web experiences.
+    </p>
+
+    <p data-testid="test-user-time" id="time"></p>
+
+    <div class="social-links">
+      <a 
+        href="https://github.com/asher2025-cell" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        data-testid="test-github-link"
+      >
+        GitHub
+      </a>
+      <a 
+        href="https://twitter.com/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        data-testid="test-twitter-link"
+      >
+        Twitter
+      </a>
+    </div>
+
+    <!-- Image upload + URL input section -->
+    <div class="upload-section">
+      <label for="imageUpload">Upload Avatar:</label>
+      <input 
+        type="file" 
+        id="imageUpload" 
+        accept="image/*" 
+        data-testid="test-upload-input"
+      />
+
+      <label for="imageUrl">Or enter image URL:</label>
+      <input 
+        type="url" 
+        id="imageUrl" 
+        placeholder="https://example.com/myphoto.jpg"
+        data-testid="test-url-input"
+      />
+
+      <button id="applyImage" data-testid="test-apply-button">Apply Image</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

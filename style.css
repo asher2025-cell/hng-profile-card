@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 2rem;
+  width: 320px;
+  max-width: 90%;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+p {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #0078ff;
+  font-weight: bold;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.upload-section {
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.upload-section label {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.upload-section input[type="file"],
+.upload-section input[type="url"] {
+  width: 100%;
+  padding: 0.3rem;
+  margin-top: 0.3rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#applyImage {
+  margin-top: 0.8rem;
+  background-color: #0078ff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+#applyImage:hover {
+  background-color: #005dc1;
+}
